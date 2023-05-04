@@ -1,0 +1,1283 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borsch</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+             <div class="header__wrapper">
+                <div class="header__burger">
+                    <svg width="26" height="20" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 19H25" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M1 10H16" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M1 1H22" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                        
+                </div>
+                <div class="header__mobile-search">
+                    <a href="#" class="header__search">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.22827 2.21606C12.8181 2.21606 15.7283 5.12621 15.7283 8.71606C15.7283 10.5842 14.9402 12.2683 13.6783 13.4539L17.2898 17.1885L16.5699 17.8826L12.8959 14.0832C11.852 14.798 10.589 15.2161 9.22827 15.2161C5.63842 15.2161 2.72827 12.3059 2.72827 8.71606C2.72827 5.12621 5.63842 2.21606 9.22827 2.21606ZM9.22827 14.2161C12.2658 14.2161 14.7283 11.7536 14.7283 8.71606C14.7283 5.6785 12.2658 3.21606 9.22827 3.21606C6.19071 3.21606 3.72827 5.6785 3.72827 8.71606C3.72827 11.7536 6.19071 14.2161 9.22827 14.2161Z" fill="white"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="header__inner header__inner--nav">
+                    <nav class="header__nav">
+                        <ul class="header__nav-list">
+                            <li class="header__nav-item header__nav-item--aside">
+                                <a href="#" class="header__link">КАТАЛОГ</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#" class="header__link">НОВОЕ</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#" class="header__link">SALE</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#" class="header__link">ПОМОЩЬ</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__logo">
+                    <a href="#" class="header__home-link">
+                        <img src="./images/logo.svg" alt="" class="logo">
+                    </a>
+                </div>
+                <div class="header__inner">
+                    <div class="header__icon-wrapper header__icon-wrapper--search">
+                        <a href="#" class="header__search">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.22827 2.21606C12.8181 2.21606 15.7283 5.12621 15.7283 8.71606C15.7283 10.5842 14.9402 12.2683 13.6783 13.4539L17.2898 17.1885L16.5699 17.8826L12.8959 14.0832C11.852 14.798 10.589 15.2161 9.22827 15.2161C5.63842 15.2161 2.72827 12.3059 2.72827 8.71606C2.72827 5.12621 5.63842 2.21606 9.22827 2.21606ZM9.22827 14.2161C12.2658 14.2161 14.7283 11.7536 14.7283 8.71606C14.7283 5.6785 12.2658 3.21606 9.22827 3.21606C6.19071 3.21606 3.72827 5.6785 3.72827 8.71606C3.72827 11.7536 6.19071 14.2161 9.22827 14.2161Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="header__icon-wrapper">
+                        <a href="#" class="header__like">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.2608 10.8156L10.0108 16.7301L3.76083 10.8156C3.34858 10.4323 3.02387 9.97162 2.80712 9.46252C2.59037 8.95343 2.4863 8.40696 2.50144 7.85755C2.51659 7.30813 2.65063 6.76766 2.89513 6.27018C3.13962 5.77269 3.48928 5.32896 3.92207 4.96693C4.35486 4.6049 4.86142 4.33242 5.40984 4.16664C5.95826 4.00085 6.53667 3.94536 7.10864 4.00366C7.68061 4.06196 8.23375 4.23278 8.73323 4.50537C9.23271 4.77796 9.6677 5.14642 10.0108 5.58753C10.3554 5.14962 10.7909 4.78439 11.2901 4.51469C11.7892 4.24499 12.3412 4.07664 12.9116 4.02016C13.482 3.96368 14.0584 4.0203 14.6048 4.18647C15.1512 4.35264 15.6559 4.62478 16.0871 4.98587C16.5184 5.34695 16.867 5.78921 17.1112 6.28495C17.3553 6.78069 17.4898 7.31925 17.5061 7.86692C17.5224 8.41459 17.4202 8.95959 17.2059 9.46779C16.9917 9.97599 16.6699 10.4365 16.2608 10.8204" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <div class="header__like-counter">
+                                <span id="like-span">0</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="header__icon-wrapper header__icon-wrapper--cart">
+                        <a href="#" class="header__cart">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.4131 4.96323V7.42201H5.37294V4.96323H10.6815V7.42201H11.6413V4.96323L14.5 4.9626V15.027H1.5V4.9626L4.4131 4.96323ZM11.6182 3.99085L15.5 3.99022V15.9994H0.5V3.99022L4.43047 3.99085C4.48725 3.18277 4.6886 2.55498 5.11257 1.76582C5.63443 0.79444 6.52222 0 7.88473 0C9.2358 0 10.19 0.78104 10.7843 1.73968C11.2729 2.52797 11.5416 3.16382 11.6182 3.99085ZM10.6533 3.99085C10.5788 3.32387 10.3553 2.87612 9.9714 2.2568C9.4972 1.49181 8.8131 0.97238 7.88473 0.97238C6.96785 0.97238 6.35977 1.4784 5.95563 2.23066C5.62312 2.84958 5.44875 3.30573 5.39307 3.99085H10.6533Z" fill="white"/>
+                            </svg>
+                            <div class="header__cart-counter">
+                                <span>8</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="header__icon-wrapper log__sign">
+                        <a href="#" class="header__sign">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15 3H5V7H4V3V2H5H15H16V3V17V18H15H5H4V17V13H5V17H15V3ZM12.5 9.96447L8.67157 6.42893L7.99115 7.13604L10.5 9.46447L2 9.49626V10.4963L10.5 10.4645L7.96446 12.7929L8.67157 13.5L12.5 9.96447Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="header__icon-wrapper header__langChange">
+                        <ul class="header__lang-list" id="langChange">
+                            <li class="header__lang-item header__lang-item--active" id="RU"><a href="#" class="header__lang-link">
+                                RU
+                            </a></li>
+                            <li class="header__lang-item" id="ENG"><a href="#" class="header__lang-link">
+                                ENG
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+             </div>
+             <div class="aside" id="aside">
+                <div class="aside__fluid">
+                    <div class="aside__nav-wrapper">
+                        <h2 class="aside__nav-title">Каталог</h2>
+                        <nav class="aside__nav">
+                            <ul class="aside__nav-list">
+                                <li class="aside__nav-item">
+                                    <a href="#" class="aside__nav-link">Платья и сарафаны</a>
+                                </li>
+                                <li class="aside__nav-item">
+                                    <a href="#" class="aside__nav-link">Брюки и джинсы</a>
+                                </li>
+                                <li class="aside__nav-item">
+                                    <a href="#" class="aside__nav-link">Костюмы</a>
+                                </li>
+                                <li class="aside__nav-item">
+                                    <a href="#" class="aside__nav-link">Джемперы, свитеры,  кардиганы</a>
+                                </li>
+                                <li class="aside__nav-item">
+                                    <a href="#" class="aside__nav-link">Майки, топы, боди</a>
+                                </li>
+                                <li class="aside__nav-item">
+                                    <a href="#" class="aside__nav-link">Юбки, шорты</a>
+                                </li>
+                                <li class="aside__nav-item">
+                                    <a href="#" class="aside__nav-link">Комбинезоны</a>
+                                </li>
+                                <li class="aside__nav-item">
+                                    <a href="#" class="aside__nav-link">Шапки, кепки, косынки</a>
+                                </li>
+                                <li class="aside__nav-item">
+                                    <a href="#" class="aside__nav-link">Рубашки</a>
+                                </li>
+                                <li class="aside__nav-item">
+                                    <a href="#" class="aside__nav-link">Пиджаки, жилеты, жакеты</a>
+                                </li>
+                                <li class="aside__nav-item">
+                                    <a href="#" class="aside__nav-link">Купальники, пляжная одежда</a>
+                                </li>
+                                <li class="aside__nav-item">
+                                    <a href="#" class="aside__nav-link">Верхняя одежда</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="aside__right-wrapper">
+                        <div class="aside__logo-box">
+                            <div class="aside__logo-wrapper">
+                                <svg width="127" height="12" viewBox="0 0 127 12" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect width="127" height="12" fill="url(#pattern0)"/>
+                                    <defs>
+                                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                    <use xlink:href="#image0_117_350" transform="matrix(0.00182482 0 0 0.0193127 0 -0.0117853)"/>
+                                    </pattern>
+                                    <image id="image0_117_350" width="548" height="53" xlink:href="data:image/png;base64,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"/>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <p class="aside__question-text">Нужна помощь?Напишите нам</p>
+                        </div>
+                        <div class="aside__social-wrapper">
+                            <a href="#" class="aside__social-link">
+                                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.51649 16.4948L9.02816 18.9297L11.5486 27.0506C11.7099 27.5707 12.3447 27.763 12.766 27.4178L16.3957 24.4533C16.7762 24.1427 17.3181 24.1272 17.7158 24.4164L24.2625 29.1783C24.7132 29.5066 25.3518 29.2591 25.4649 28.7134L30.2607 5.60129C30.3841 5.00521 29.7995 4.50793 29.2329 4.72746L2.50886 15.0562C1.84936 15.311 1.85511 16.2465 2.51649 16.4948ZM11.1424 17.6336L23.8686 9.7807C24.0973 9.63998 24.3327 9.94982 24.1363 10.1323L13.6334 19.9136C13.2642 20.2579 13.0261 20.7187 12.9587 21.2188L12.6009 23.8751C12.5535 24.2298 12.0562 24.265 11.9585 23.9217L10.5826 19.0778C10.425 18.5253 10.6546 17.9352 11.1424 17.6336Z" fill="#494949"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="aside__social-link"> 
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 0C6.28059 0 9.03455e-05 6.28052 9.03455e-05 14C9.03455e-05 16.4104 0.622784 18.7807 1.80365 20.8722L0.022612 27.227C-0.0358226 27.4357 0.020786 27.6597 0.171742 27.815C0.288002 27.9349 0.446263 28 0.608784 28C0.657479 28 0.706784 27.9939 0.75487 27.9823L7.3872 26.3395C9.41232 27.4266 11.6931 28 14 28C21.7195 28 28 21.7195 28 14C28 6.28052 21.7195 0 14 0ZM21.0426 18.9402C20.7432 19.7692 19.3066 20.5258 18.6164 20.6275C17.9967 20.7182 17.2127 20.7571 16.352 20.4869C15.8304 20.3225 15.1608 20.1046 14.3032 19.7388C10.6979 18.2012 8.34345 14.6166 8.16328 14.3798C7.98372 14.143 6.69572 12.4557 6.69572 10.7094C6.69572 8.96304 7.62398 8.10417 7.95389 7.7487C8.2838 7.39322 8.67276 7.30435 8.91258 7.30435C9.15241 7.30435 9.39163 7.30739 9.60162 7.31713C9.82258 7.32809 10.119 7.23374 10.4106 7.92643C10.7101 8.63739 11.4289 10.3837 11.5178 10.5621C11.6079 10.7398 11.6675 10.9474 11.5482 11.1842C11.4289 11.421 11.3693 11.5689 11.1891 11.7764C11.0089 11.984 10.8117 12.239 10.6498 12.3985C10.4696 12.5757 10.2828 12.7674 10.4921 13.1229C10.7015 13.4783 11.4228 14.6403 12.4917 15.5814C13.8643 16.7903 15.0226 17.1652 15.3818 17.343C15.7409 17.5207 15.9509 17.4909 16.1603 17.2541C16.3697 17.0167 17.0587 16.2175 17.2979 15.8626C17.5372 15.5077 17.777 15.5662 18.1069 15.6849C18.4368 15.803 20.2039 16.6612 20.563 16.839C20.9221 17.0167 21.1619 17.1056 21.252 17.2535C21.3421 17.4008 21.3421 18.1117 21.0426 18.9402Z" fill="#494949"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </header>
+        <main class="main">
+            <div class="hero__slider">
+                <div class="hero__slider-item">
+                    <div class="hero__slider-item--wrapper">
+                        <img src="./images/slide1.jpg" alt="" class="hero__slider-img">
+                    </div>
+                    <div class="hero__slider-inner">
+                        <p class="hero__slider-title">Аксессуары</p>
+                        <p class="hero__slider-descr">Косынка стилевая</p>
+                        <a href="#" class="hero__slider-btn">Смотреть</a>
+                    </div>
+                </div>
+                <div class="hero__slider-item">
+                    <div class="hero__slider-item--wrapper">
+                        <img src="./images/slide2.jpg" alt="" class="hero__slider-img">
+                    </div>
+                    <div class="hero__slider-inner">
+                        <p class="hero__slider-title">Аксессуары</p>
+                        <p class="hero__slider-descr">Косынка стильная</p>
+                        <a href="#" class="hero__slider-btn">Смотреть</a>
+                    </div>
+                </div>
+                <div class="hero__slider-item">
+                    <div class="hero__slider-item--wrapper">
+                        <img src="./images/slide1.jpg" alt="" class="hero__slider-img">
+                    </div>
+                    <div class="hero__slider-inner">
+                        <p class="hero__slider-title">Аксессуары</p>
+                        <p class="hero__slider-descr">Косынка стилевая</p>
+                        <a href="#" class="hero__slider-btn">Смотреть</a>
+                    </div>
+                </div>
+                <div class="hero__slider-item">
+                    <div class="hero__slider-item--wrapper">
+                        <img src="./images/slide2.jpg" alt="" class="hero__slider-img">
+                    </div>
+                    <div class="hero__slider-inner">
+                        <p class="hero__slider-title">Аксессуары</p>
+                        <p class="hero__slider-descr">Косынка ваще самая стилячая</p>
+                        <a href="#" class="hero__slider-btn">Смотреть</a>
+                    </div>
+                </div>
+            </div>
+            <section class="offers offer__slider-bg">
+                <a href="#" class="mb-slider__link">Рубашки</a>
+                <div class="offers__fluid">
+                    <div class="offers__link-wrapper">
+                        <a href="#" class="offers__link"><span>Платья</span></a>
+                    </div>
+                        <div class="first-slider">
+                            <div class="first-slider__item first-slider__item--top">
+                                <div class="first-slider__img-wrapper">
+                                    <a href="#" class="first__slider-offer--link">
+                                        <img src="./images/first-slide1.jpg" alt="" class="first-slider__img">
+                                    </a>
+                                </div>
+                                <div class="first-slider__price-wrapper">
+                                    <div class="first-slider__price-inner">
+                                        <p class="first-slider__price-title">Косынка черная</p>
+                                        <p class="first-slider__price-cost">5500 <span>p</span></p>
+                                    </div>
+                                    <button class="first-slider__like-btn">
+                                        <svg width="35" height="33" viewBox="0 0 35 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M28.4565 18.6772L17.519 28.8907L6.58145 18.6772C5.86002 18.0153 5.29176 17.2197 4.91246 16.3406C4.53316 15.4614 4.35102 14.5177 4.37753 13.569C4.40404 12.6202 4.63861 11.6869 5.06647 10.8278C5.49434 9.96867 6.10623 9.20241 6.86362 8.57723C7.62101 7.95205 8.50748 7.48151 9.46722 7.19522C10.427 6.90894 11.4392 6.81311 12.4401 6.91379C13.4411 7.01446 14.4091 7.30945 15.2831 7.78018C16.1572 8.25091 16.9185 8.88719 17.519 9.64893C18.122 8.89272 18.8842 8.262 19.7576 7.79627C20.6311 7.33053 21.5972 7.0398 22.5953 6.94227C23.5935 6.84475 24.6022 6.94252 25.5584 7.22947C26.5146 7.51643 27.3977 7.98639 28.1525 8.60993C28.9072 9.23348 29.5173 9.9972 29.9446 10.8533C30.3718 11.7094 30.6071 12.6394 30.6357 13.5852C30.6642 14.5309 30.4854 15.4721 30.1104 16.3497C29.7354 17.2273 29.1724 18.0224 28.4565 18.6854" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="bg-slider__price-wrapper">
+                                    <div class="second-slider__price-inner">
+                                        <a href="#" class="second-slider__price-link">
+                                            Куртка Мидуза
+                                        </a>
+                                        <p class="second-slider__price">5 500<span>p</span></p>
+                                    </div>
+                                    <button class="second-slider__like-btn second-slider__like-btn--active">
+                                        <svg width="35" height="33" viewBox="0 0 35 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M28.4565 18.6772L17.519 28.8907L6.58145 18.6772C5.86002 18.0153 5.29176 17.2197 4.91246 16.3406C4.53316 15.4614 4.35102 14.5177 4.37753 13.569C4.40404 12.6202 4.63861 11.6869 5.06647 10.8278C5.49434 9.96867 6.10623 9.20241 6.86362 8.57723C7.62101 7.95205 8.50748 7.48151 9.46722 7.19522C10.427 6.90894 11.4392 6.81311 12.4401 6.91379C13.4411 7.01446 14.4091 7.30945 15.2831 7.78018C16.1572 8.25091 16.9185 8.88719 17.519 9.64893C18.122 8.89272 18.8842 8.262 19.7576 7.79627C20.6311 7.33053 21.5972 7.0398 22.5953 6.94227C23.5935 6.84475 24.6022 6.94252 25.5584 7.22947C26.5146 7.51643 27.3977 7.98639 28.1525 8.60993C28.9072 9.23348 29.5173 9.9972 29.9446 10.8533C30.3718 11.7094 30.6071 12.6394 30.6357 13.5852C30.6642 14.5309 30.4854 15.4721 30.1104 16.3497C29.7354 17.2273 29.1724 18.0224 28.4565 18.6854" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="first-slider__item first-slider__item--top">
+                                <div class="first-slider__img-wrapper">
+                                    <a href="#" class="first__slider-offer--link">
+                                        <img src="./images/first-slide2.jpg" alt="" class="first-slider__img">
+                                    </a>
+                                </div>
+                                <div class="first-slider__price-wrapper">
+                                    <div class="first-slider__price-inner">
+                                        <p class="first-slider__price-title">Косынка черная</p>
+                                        <p class="first-slider__price-cost">5500 <span>p</span></p>
+                                    </div>
+                                    <button class="first-slider__like-btn">
+                                        <svg width="35" height="33" viewBox="0 0 35 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M28.4565 18.6772L17.519 28.8907L6.58145 18.6772C5.86002 18.0153 5.29176 17.2197 4.91246 16.3406C4.53316 15.4614 4.35102 14.5177 4.37753 13.569C4.40404 12.6202 4.63861 11.6869 5.06647 10.8278C5.49434 9.96867 6.10623 9.20241 6.86362 8.57723C7.62101 7.95205 8.50748 7.48151 9.46722 7.19522C10.427 6.90894 11.4392 6.81311 12.4401 6.91379C13.4411 7.01446 14.4091 7.30945 15.2831 7.78018C16.1572 8.25091 16.9185 8.88719 17.519 9.64893C18.122 8.89272 18.8842 8.262 19.7576 7.79627C20.6311 7.33053 21.5972 7.0398 22.5953 6.94227C23.5935 6.84475 24.6022 6.94252 25.5584 7.22947C26.5146 7.51643 27.3977 7.98639 28.1525 8.60993C28.9072 9.23348 29.5173 9.9972 29.9446 10.8533C30.3718 11.7094 30.6071 12.6394 30.6357 13.5852C30.6642 14.5309 30.4854 15.4721 30.1104 16.3497C29.7354 17.2273 29.1724 18.0224 28.4565 18.6854" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="bg-slider__price-wrapper">
+                                    <div class="second-slider__price-inner">
+                                        <a href="#" class="second-slider__price-link">
+                                            Куртка Мидуза
+                                        </a>
+                                        <p class="second-slider__price">5 500<span>p</span></p>
+                                    </div>
+                                    <button class="second-slider__like-btn second-slider__like-btn--active">
+                                        <svg width="35" height="33" viewBox="0 0 35 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M28.4565 18.6772L17.519 28.8907L6.58145 18.6772C5.86002 18.0153 5.29176 17.2197 4.91246 16.3406C4.53316 15.4614 4.35102 14.5177 4.37753 13.569C4.40404 12.6202 4.63861 11.6869 5.06647 10.8278C5.49434 9.96867 6.10623 9.20241 6.86362 8.57723C7.62101 7.95205 8.50748 7.48151 9.46722 7.19522C10.427 6.90894 11.4392 6.81311 12.4401 6.91379C13.4411 7.01446 14.4091 7.30945 15.2831 7.78018C16.1572 8.25091 16.9185 8.88719 17.519 9.64893C18.122 8.89272 18.8842 8.262 19.7576 7.79627C20.6311 7.33053 21.5972 7.0398 22.5953 6.94227C23.5935 6.84475 24.6022 6.94252 25.5584 7.22947C26.5146 7.51643 27.3977 7.98639 28.1525 8.60993C28.9072 9.23348 29.5173 9.9972 29.9446 10.8533C30.3718 11.7094 30.6071 12.6394 30.6357 13.5852C30.6642 14.5309 30.4854 15.4721 30.1104 16.3497C29.7354 17.2273 29.1724 18.0224 28.4565 18.6854" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="first-slider__item first-slider__item--top">
+                                <div class="first-slider__img-wrapper">
+                                    <a href="#" class="first__slider-offer--link">
+                                        <img src="./images/first-slide3.jpg" alt="" class="first-slider__img">
+                                    </a>
+                                </div>
+                                <div class="first-slider__price-wrapper">
+                                    <div class="first-slider__price-inner">
+                                        <p class="first-slider__price-title">Косынка черная</p>
+                                        <p class="first-slider__price-cost">5500 <span>p</span></p>
+                                    </div>
+                                    <button class="first-slider__like-btn">
+                                        <svg width="35" height="33" viewBox="0 0 35 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M28.4565 18.6772L17.519 28.8907L6.58145 18.6772C5.86002 18.0153 5.29176 17.2197 4.91246 16.3406C4.53316 15.4614 4.35102 14.5177 4.37753 13.569C4.40404 12.6202 4.63861 11.6869 5.06647 10.8278C5.49434 9.96867 6.10623 9.20241 6.86362 8.57723C7.62101 7.95205 8.50748 7.48151 9.46722 7.19522C10.427 6.90894 11.4392 6.81311 12.4401 6.91379C13.4411 7.01446 14.4091 7.30945 15.2831 7.78018C16.1572 8.25091 16.9185 8.88719 17.519 9.64893C18.122 8.89272 18.8842 8.262 19.7576 7.79627C20.6311 7.33053 21.5972 7.0398 22.5953 6.94227C23.5935 6.84475 24.6022 6.94252 25.5584 7.22947C26.5146 7.51643 27.3977 7.98639 28.1525 8.60993C28.9072 9.23348 29.5173 9.9972 29.9446 10.8533C30.3718 11.7094 30.6071 12.6394 30.6357 13.5852C30.6642 14.5309 30.4854 15.4721 30.1104 16.3497C29.7354 17.2273 29.1724 18.0224 28.4565 18.6854" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="bg-slider__price-wrapper">
+                                    <div class="second-slider__price-inner">
+                                        <a href="#" class="second-slider__price-link">
+                                            Куртка Мидуза
+                                        </a>
+                                        <p class="second-slider__price">5 500<span>p</span></p>
+                                    </div>
+                                    <button class="second-slider__like-btn second-slider__like-btn--active">
+                                        <svg width="35" height="33" viewBox="0 0 35 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M28.4565 18.6772L17.519 28.8907L6.58145 18.6772C5.86002 18.0153 5.29176 17.2197 4.91246 16.3406C4.53316 15.4614 4.35102 14.5177 4.37753 13.569C4.40404 12.6202 4.63861 11.6869 5.06647 10.8278C5.49434 9.96867 6.10623 9.20241 6.86362 8.57723C7.62101 7.95205 8.50748 7.48151 9.46722 7.19522C10.427 6.90894 11.4392 6.81311 12.4401 6.91379C13.4411 7.01446 14.4091 7.30945 15.2831 7.78018C16.1572 8.25091 16.9185 8.88719 17.519 9.64893C18.122 8.89272 18.8842 8.262 19.7576 7.79627C20.6311 7.33053 21.5972 7.0398 22.5953 6.94227C23.5935 6.84475 24.6022 6.94252 25.5584 7.22947C26.5146 7.51643 27.3977 7.98639 28.1525 8.60993C28.9072 9.23348 29.5173 9.9972 29.9446 10.8533C30.3718 11.7094 30.6071 12.6394 30.6357 13.5852C30.6642 14.5309 30.4854 15.4721 30.1104 16.3497C29.7354 17.2273 29.1724 18.0224 28.4565 18.6854" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="first-slider__item first-slider__item--top">
+                                <div class="first-slider__img-wrapper">
+                                    <a href="#" class="first__slider-offer--link">
+                                        <img src="./images/first-slide1.jpg" alt="" class="first-slider__img">
+                                    </a>
+                                </div>
+                                <div class="first-slider__price-wrapper">
+                                    <div class="first-slider__price-inner">
+                                        <p class="first-slider__price-title">Косынка черная</p>
+                                        <p class="first-slider__price-cost">5500 <span>p</span></p>
+                                    </div>
+                                    <button class="first-slider__like-btn">
+                                        <svg width="35" height="33" viewBox="0 0 35 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M28.4565 18.6772L17.519 28.8907L6.58145 18.6772C5.86002 18.0153 5.29176 17.2197 4.91246 16.3406C4.53316 15.4614 4.35102 14.5177 4.37753 13.569C4.40404 12.6202 4.63861 11.6869 5.06647 10.8278C5.49434 9.96867 6.10623 9.20241 6.86362 8.57723C7.62101 7.95205 8.50748 7.48151 9.46722 7.19522C10.427 6.90894 11.4392 6.81311 12.4401 6.91379C13.4411 7.01446 14.4091 7.30945 15.2831 7.78018C16.1572 8.25091 16.9185 8.88719 17.519 9.64893C18.122 8.89272 18.8842 8.262 19.7576 7.79627C20.6311 7.33053 21.5972 7.0398 22.5953 6.94227C23.5935 6.84475 24.6022 6.94252 25.5584 7.22947C26.5146 7.51643 27.3977 7.98639 28.1525 8.60993C28.9072 9.23348 29.5173 9.9972 29.9446 10.8533C30.3718 11.7094 30.6071 12.6394 30.6357 13.5852C30.6642 14.5309 30.4854 15.4721 30.1104 16.3497C29.7354 17.2273 29.1724 18.0224 28.4565 18.6854" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="bg-slider__price-wrapper">
+                                    <div class="second-slider__price-inner">
+                                        <a href="#" class="second-slider__price-link">
+                                            Куртка Мидуза
+                                        </a>
+                                        <p class="second-slider__price">5 500<span>p</span></p>
+                                    </div>
+                                    <button class="second-slider__like-btn second-slider__like-btn--active">
+                                        <svg width="35" height="33" viewBox="0 0 35 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M28.4565 18.6772L17.519 28.8907L6.58145 18.6772C5.86002 18.0153 5.29176 17.2197 4.91246 16.3406C4.53316 15.4614 4.35102 14.5177 4.37753 13.569C4.40404 12.6202 4.63861 11.6869 5.06647 10.8278C5.49434 9.96867 6.10623 9.20241 6.86362 8.57723C7.62101 7.95205 8.50748 7.48151 9.46722 7.19522C10.427 6.90894 11.4392 6.81311 12.4401 6.91379C13.4411 7.01446 14.4091 7.30945 15.2831 7.78018C16.1572 8.25091 16.9185 8.88719 17.519 9.64893C18.122 8.89272 18.8842 8.262 19.7576 7.79627C20.6311 7.33053 21.5972 7.0398 22.5953 6.94227C23.5935 6.84475 24.6022 6.94252 25.5584 7.22947C26.5146 7.51643 27.3977 7.98639 28.1525 8.60993C28.9072 9.23348 29.5173 9.9972 29.9446 10.8533C30.3718 11.7094 30.6071 12.6394 30.6357 13.5852C30.6642 14.5309 30.4854 15.4721 30.1104 16.3497C29.7354 17.2273 29.1724 18.0224 28.4565 18.6854" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                </section>
+                <section class="offers offers__slide-sm">
+                    <a href="#" class="mb-slider__link">Платья</a>
+                <div class="offers__fluid">
+                    <div class="offers__link-wrapper--second-slider">
+                        <a href="#" class="offers__link"><span>Платья</span></a>
+                    </div>
+                    <div class="offers__second-slider">
+                        <div class="second-slider__item">
+                            <div class="second-slider__img-wrapper">
+                                <a href="#" class="second-slider__img-link">
+                                    <img src="./images/second-slide1.jpg" alt="" class="second-slider__img">
+                                </a>
+                            </div>
+                            <div class="second-slider__price-wrapper">
+                                <div class="second-slider__price-inner">
+                                    <a href="#" class="second-slider__price-link">
+                                        Куртка Мидуза
+                                    </a>
+                                    <p class="second-slider__price">5 500<span>p</span></p>
+                                </div>
+                                <button class="second-slider__like-btn ">
+                                    <svg width="35" height="33" viewBox="0 0 35 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M28.4565 18.6772L17.519 28.8907L6.58145 18.6772C5.86002 18.0153 5.29176 17.2197 4.91246 16.3406C4.53316 15.4614 4.35102 14.5177 4.37753 13.569C4.40404 12.6202 4.63861 11.6869 5.06647 10.8278C5.49434 9.96867 6.10623 9.20241 6.86362 8.57723C7.62101 7.95205 8.50748 7.48151 9.46722 7.19522C10.427 6.90894 11.4392 6.81311 12.4401 6.91379C13.4411 7.01446 14.4091 7.30945 15.2831 7.78018C16.1572 8.25091 16.9185 8.88719 17.519 9.64893C18.122 8.89272 18.8842 8.262 19.7576 7.79627C20.6311 7.33053 21.5972 7.0398 22.5953 6.94227C23.5935 6.84475 24.6022 6.94252 25.5584 7.22947C26.5146 7.51643 27.3977 7.98639 28.1525 8.60993C28.9072 9.23348 29.5173 9.9972 29.9446 10.8533C30.3718 11.7094 30.6071 12.6394 30.6357 13.5852C30.6642 14.5309 30.4854 15.4721 30.1104 16.3497C29.7354 17.2273 29.1724 18.0224 28.4565 18.6854" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="second-slider__item">
+                            <div class="second-slider__img-wrapper">
+                                <a href="#" class="second-slider__img-link">
+                                    <img src="./images/second-slide2.jpg" alt="" class="second-slider__img">
+                                </a>
+                            </div>
+                            <div class="second-slider__price-wrapper">
+                                <div class="second-slider__price-inner">
+                                    <a href="#" class="second-slider__price-link">
+                                        Куртка Мидуза
+                                    </a>
+                                    <p class="second-slider__price">5 500<span>p</span></p>
+                                </div>
+                                <button class="second-slider__like-btn ">
+                                    <svg width="35" height="33" viewBox="0 0 35 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M28.4565 18.6772L17.519 28.8907L6.58145 18.6772C5.86002 18.0153 5.29176 17.2197 4.91246 16.3406C4.53316 15.4614 4.35102 14.5177 4.37753 13.569C4.40404 12.6202 4.63861 11.6869 5.06647 10.8278C5.49434 9.96867 6.10623 9.20241 6.86362 8.57723C7.62101 7.95205 8.50748 7.48151 9.46722 7.19522C10.427 6.90894 11.4392 6.81311 12.4401 6.91379C13.4411 7.01446 14.4091 7.30945 15.2831 7.78018C16.1572 8.25091 16.9185 8.88719 17.519 9.64893C18.122 8.89272 18.8842 8.262 19.7576 7.79627C20.6311 7.33053 21.5972 7.0398 22.5953 6.94227C23.5935 6.84475 24.6022 6.94252 25.5584 7.22947C26.5146 7.51643 27.3977 7.98639 28.1525 8.60993C28.9072 9.23348 29.5173 9.9972 29.9446 10.8533C30.3718 11.7094 30.6071 12.6394 30.6357 13.5852C30.6642 14.5309 30.4854 15.4721 30.1104 16.3497C29.7354 17.2273 29.1724 18.0224 28.4565 18.6854" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="second-slider__item">
+                            <div class="second-slider__img-wrapper">
+                                <a href="#" class="second-slider__img-link">
+                                    <img src="./images/second-slide3.jpg" alt="" class="second-slider__img">
+                                </a>
+                            </div>
+                            <div class="second-slider__price-wrapper">
+                                <div class="second-slider__price-inner">
+                                    <a href="#" class="second-slider__price-link">
+                                        Куртка Мидуза
+                                    </a>
+                                    <p class="second-slider__price">5 500<span>p</span></p>
+                                </div>
+                                <button class="second-slider__like-btn ">
+                                    <svg width="35" height="33" viewBox="0 0 35 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M28.4565 18.6772L17.519 28.8907L6.58145 18.6772C5.86002 18.0153 5.29176 17.2197 4.91246 16.3406C4.53316 15.4614 4.35102 14.5177 4.37753 13.569C4.40404 12.6202 4.63861 11.6869 5.06647 10.8278C5.49434 9.96867 6.10623 9.20241 6.86362 8.57723C7.62101 7.95205 8.50748 7.48151 9.46722 7.19522C10.427 6.90894 11.4392 6.81311 12.4401 6.91379C13.4411 7.01446 14.4091 7.30945 15.2831 7.78018C16.1572 8.25091 16.9185 8.88719 17.519 9.64893C18.122 8.89272 18.8842 8.262 19.7576 7.79627C20.6311 7.33053 21.5972 7.0398 22.5953 6.94227C23.5935 6.84475 24.6022 6.94252 25.5584 7.22947C26.5146 7.51643 27.3977 7.98639 28.1525 8.60993C28.9072 9.23348 29.5173 9.9972 29.9446 10.8533C30.3718 11.7094 30.6071 12.6394 30.6357 13.5852C30.6642 14.5309 30.4854 15.4721 30.1104 16.3497C29.7354 17.2273 29.1724 18.0224 28.4565 18.6854" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="second-slider__item">
+                            <div class="second-slider__img-wrapper">
+                                <a href="#" class="second-slider__img-link">
+                                    <img src="./images/second-slide4.jpg" alt="" class="second-slider__img">
+                                </a>
+                            </div>
+                            <div class="second-slider__price-wrapper">
+                                <div class="second-slider__price-inner">
+                                    <a href="#" class="second-slider__price-link">
+                                        Куртка Мидуза
+                                    </a>
+                                    <p class="second-slider__price">5 500<span>p</span></p>
+                                </div>
+                                <button class="second-slider__like-btn ">
+                                    <svg width="35" height="33" viewBox="0 0 35 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M28.4565 18.6772L17.519 28.8907L6.58145 18.6772C5.86002 18.0153 5.29176 17.2197 4.91246 16.3406C4.53316 15.4614 4.35102 14.5177 4.37753 13.569C4.40404 12.6202 4.63861 11.6869 5.06647 10.8278C5.49434 9.96867 6.10623 9.20241 6.86362 8.57723C7.62101 7.95205 8.50748 7.48151 9.46722 7.19522C10.427 6.90894 11.4392 6.81311 12.4401 6.91379C13.4411 7.01446 14.4091 7.30945 15.2831 7.78018C16.1572 8.25091 16.9185 8.88719 17.519 9.64893C18.122 8.89272 18.8842 8.262 19.7576 7.79627C20.6311 7.33053 21.5972 7.0398 22.5953 6.94227C23.5935 6.84475 24.6022 6.94252 25.5584 7.22947C26.5146 7.51643 27.3977 7.98639 28.1525 8.60993C28.9072 9.23348 29.5173 9.9972 29.9446 10.8533C30.3718 11.7094 30.6071 12.6394 30.6357 13.5852C30.6642 14.5309 30.4854 15.4721 30.1104 16.3497C29.7354 17.2273 29.1724 18.0224 28.4565 18.6854" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="second-slider__item">
+                            <div class="second-slider__img-wrapper">
+                                <a href="#" class="second-slider__img-link">
+                                    <img src="./images/second-slide1.jpg" alt="" class="second-slider__img">
+                                </a>
+                            </div>
+                            <div class="second-slider__price-wrapper">
+                                <div class="second-slider__price-inner">
+                                    <a href="#" class="second-slider__price-link">
+                                        Куртка Мидуза
+                                    </a>
+                                    <p class="second-slider__price">5 500<span>p</span></p>
+                                </div>
+                                <button class="second-slider__like-btn ">
+                                    <svg width="35" height="33" viewBox="0 0 35 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M28.4565 18.6772L17.519 28.8907L6.58145 18.6772C5.86002 18.0153 5.29176 17.2197 4.91246 16.3406C4.53316 15.4614 4.35102 14.5177 4.37753 13.569C4.40404 12.6202 4.63861 11.6869 5.06647 10.8278C5.49434 9.96867 6.10623 9.20241 6.86362 8.57723C7.62101 7.95205 8.50748 7.48151 9.46722 7.19522C10.427 6.90894 11.4392 6.81311 12.4401 6.91379C13.4411 7.01446 14.4091 7.30945 15.2831 7.78018C16.1572 8.25091 16.9185 8.88719 17.519 9.64893C18.122 8.89272 18.8842 8.262 19.7576 7.79627C20.6311 7.33053 21.5972 7.0398 22.5953 6.94227C23.5935 6.84475 24.6022 6.94252 25.5584 7.22947C26.5146 7.51643 27.3977 7.98639 28.1525 8.60993C28.9072 9.23348 29.5173 9.9972 29.9446 10.8533C30.3718 11.7094 30.6071 12.6394 30.6357 13.5852C30.6642 14.5309 30.4854 15.4721 30.1104 16.3497C29.7354 17.2273 29.1724 18.0224 28.4565 18.6854" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="second-slider__item">
+                            <div class="second-slider__img-wrapper">
+                                <a href="#" class="second-slider__img-link">
+                                    <img src="./images/second-slide4.jpg" alt="" class="second-slider__img">
+                                </a>
+                            </div>
+                            <div class="second-slider__price-wrapper">
+                                <div class="second-slider__price-inner">
+                                    <a href="#" class="second-slider__price-link">
+                                        Куртка Мидуза
+                                    </a>
+                                    <p class="second-slider__price">5 500<span>p</span></p>
+                                </div>
+                                <button class="second-slider__like-btn ">
+                                    <svg width="35" height="33" viewBox="0 0 35 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M28.4565 18.6772L17.519 28.8907L6.58145 18.6772C5.86002 18.0153 5.29176 17.2197 4.91246 16.3406C4.53316 15.4614 4.35102 14.5177 4.37753 13.569C4.40404 12.6202 4.63861 11.6869 5.06647 10.8278C5.49434 9.96867 6.10623 9.20241 6.86362 8.57723C7.62101 7.95205 8.50748 7.48151 9.46722 7.19522C10.427 6.90894 11.4392 6.81311 12.4401 6.91379C13.4411 7.01446 14.4091 7.30945 15.2831 7.78018C16.1572 8.25091 16.9185 8.88719 17.519 9.64893C18.122 8.89272 18.8842 8.262 19.7576 7.79627C20.6311 7.33053 21.5972 7.0398 22.5953 6.94227C23.5935 6.84475 24.6022 6.94252 25.5584 7.22947C26.5146 7.51643 27.3977 7.98639 28.1525 8.60993C28.9072 9.23348 29.5173 9.9972 29.9446 10.8533C30.3718 11.7094 30.6071 12.6394 30.6357 13.5852C30.6642 14.5309 30.4854 15.4721 30.1104 16.3497C29.7354 17.2273 29.1724 18.0224 28.4565 18.6854" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </section>
+                <section class="offers offers__slider-sm">
+                    <a href="#" class="mb-slider__link">Рубашки</a>
+                <div class="offers__fluid">
+                    <div class="offers__link-wrapper--second-slider">
+                        <a href="#" class="offers__link"><span>Брюки</span></a>
+                    </div>
+                    <div class="offers__second-slider">
+                        <div class="second-slider__item">
+                            <div class="second-slider__img-wrapper">
+                                <a href="#" class="second-slider__img-link">
+                                    <img src="./images/10 1.jpg" alt="" class="second-slider__img">
+                                </a>
+                            </div>
+                            <div class="second-slider__price-wrapper">
+                                <div class="second-slider__price-inner">
+                                    <a href="#" class="second-slider__price-link">
+                                        Куртка Мидуза
+                                    </a>
+                                    <p class="second-slider__price">5 500<span>p</span></p>
+                                </div>
+                                <button class="second-slider__like-btn ">
+                                    <svg width="35" height="33" viewBox="0 0 35 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M28.4565 18.6772L17.519 28.8907L6.58145 18.6772C5.86002 18.0153 5.29176 17.2197 4.91246 16.3406C4.53316 15.4614 4.35102 14.5177 4.37753 13.569C4.40404 12.6202 4.63861 11.6869 5.06647 10.8278C5.49434 9.96867 6.10623 9.20241 6.86362 8.57723C7.62101 7.95205 8.50748 7.48151 9.46722 7.19522C10.427 6.90894 11.4392 6.81311 12.4401 6.91379C13.4411 7.01446 14.4091 7.30945 15.2831 7.78018C16.1572 8.25091 16.9185 8.88719 17.519 9.64893C18.122 8.89272 18.8842 8.262 19.7576 7.79627C20.6311 7.33053 21.5972 7.0398 22.5953 6.94227C23.5935 6.84475 24.6022 6.94252 25.5584 7.22947C26.5146 7.51643 27.3977 7.98639 28.1525 8.60993C28.9072 9.23348 29.5173 9.9972 29.9446 10.8533C30.3718 11.7094 30.6071 12.6394 30.6357 13.5852C30.6642 14.5309 30.4854 15.4721 30.1104 16.3497C29.7354 17.2273 29.1724 18.0224 28.4565 18.6854" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="second-slider__item">
+                            <div class="second-slider__img-wrapper">
+                                <a href="#" class="second-slider__img-link">
+                                    <img src="./images/5 5.jpg" alt="" class="second-slider__img">
+                                </a>
+                            </div>
+                            <div class="second-slider__price-wrapper">
+                                <div class="second-slider__price-inner">
+                                    <a href="#" class="second-slider__price-link">
+                                        Куртка Мидуза
+                                    </a>
+                                    <p class="second-slider__price">5 500<span>p</span></p>
+                                </div>
+                                <button class="second-slider__like-btn ">
+                                    <svg width="35" height="33" viewBox="0 0 35 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M28.4565 18.6772L17.519 28.8907L6.58145 18.6772C5.86002 18.0153 5.29176 17.2197 4.91246 16.3406C4.53316 15.4614 4.35102 14.5177 4.37753 13.569C4.40404 12.6202 4.63861 11.6869 5.06647 10.8278C5.49434 9.96867 6.10623 9.20241 6.86362 8.57723C7.62101 7.95205 8.50748 7.48151 9.46722 7.19522C10.427 6.90894 11.4392 6.81311 12.4401 6.91379C13.4411 7.01446 14.4091 7.30945 15.2831 7.78018C16.1572 8.25091 16.9185 8.88719 17.519 9.64893C18.122 8.89272 18.8842 8.262 19.7576 7.79627C20.6311 7.33053 21.5972 7.0398 22.5953 6.94227C23.5935 6.84475 24.6022 6.94252 25.5584 7.22947C26.5146 7.51643 27.3977 7.98639 28.1525 8.60993C28.9072 9.23348 29.5173 9.9972 29.9446 10.8533C30.3718 11.7094 30.6071 12.6394 30.6357 13.5852C30.6642 14.5309 30.4854 15.4721 30.1104 16.3497C29.7354 17.2273 29.1724 18.0224 28.4565 18.6854" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="second-slider__item">
+                            <div class="second-slider__img-wrapper">
+                                <a href="#" class="second-slider__img-link">
+                                    <img src="./images/11 1.jpg" alt="" class="second-slider__img">
+                                </a>
+                            </div>
+                            <div class="second-slider__price-wrapper">
+                                <div class="second-slider__price-inner">
+                                    <a href="#" class="second-slider__price-link">
+                                        Куртка Мидуза
+                                    </a>
+                                    <p class="second-slider__price">5 500<span>p</span></p>
+                                </div>
+                                <button class="second-slider__like-btn ">
+                                    <svg width="35" height="33" viewBox="0 0 35 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M28.4565 18.6772L17.519 28.8907L6.58145 18.6772C5.86002 18.0153 5.29176 17.2197 4.91246 16.3406C4.53316 15.4614 4.35102 14.5177 4.37753 13.569C4.40404 12.6202 4.63861 11.6869 5.06647 10.8278C5.49434 9.96867 6.10623 9.20241 6.86362 8.57723C7.62101 7.95205 8.50748 7.48151 9.46722 7.19522C10.427 6.90894 11.4392 6.81311 12.4401 6.91379C13.4411 7.01446 14.4091 7.30945 15.2831 7.78018C16.1572 8.25091 16.9185 8.88719 17.519 9.64893C18.122 8.89272 18.8842 8.262 19.7576 7.79627C20.6311 7.33053 21.5972 7.0398 22.5953 6.94227C23.5935 6.84475 24.6022 6.94252 25.5584 7.22947C26.5146 7.51643 27.3977 7.98639 28.1525 8.60993C28.9072 9.23348 29.5173 9.9972 29.9446 10.8533C30.3718 11.7094 30.6071 12.6394 30.6357 13.5852C30.6642 14.5309 30.4854 15.4721 30.1104 16.3497C29.7354 17.2273 29.1724 18.0224 28.4565 18.6854" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="second-slider__item">
+                            <div class="second-slider__img-wrapper">
+                                <a href="#" class="second-slider__img-link">
+                                    <img src="./images/second-slide4.jpg" alt="" class="second-slider__img">
+                                </a>
+                            </div>
+                            <div class="second-slider__price-wrapper">
+                                <div class="second-slider__price-inner">
+                                    <a href="#" class="second-slider__price-link">
+                                        Куртка Мидуза
+                                    </a>
+                                    <p class="second-slider__price">5 500<span>p</span></p>
+                                </div>
+                                <button class="second-slider__like-btn ">
+                                    <svg width="35" height="33" viewBox="0 0 35 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M28.4565 18.6772L17.519 28.8907L6.58145 18.6772C5.86002 18.0153 5.29176 17.2197 4.91246 16.3406C4.53316 15.4614 4.35102 14.5177 4.37753 13.569C4.40404 12.6202 4.63861 11.6869 5.06647 10.8278C5.49434 9.96867 6.10623 9.20241 6.86362 8.57723C7.62101 7.95205 8.50748 7.48151 9.46722 7.19522C10.427 6.90894 11.4392 6.81311 12.4401 6.91379C13.4411 7.01446 14.4091 7.30945 15.2831 7.78018C16.1572 8.25091 16.9185 8.88719 17.519 9.64893C18.122 8.89272 18.8842 8.262 19.7576 7.79627C20.6311 7.33053 21.5972 7.0398 22.5953 6.94227C23.5935 6.84475 24.6022 6.94252 25.5584 7.22947C26.5146 7.51643 27.3977 7.98639 28.1525 8.60993C28.9072 9.23348 29.5173 9.9972 29.9446 10.8533C30.3718 11.7094 30.6071 12.6394 30.6357 13.5852C30.6642 14.5309 30.4854 15.4721 30.1104 16.3497C29.7354 17.2273 29.1724 18.0224 28.4565 18.6854" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="second-slider__item">
+                            <div class="second-slider__img-wrapper">
+                                <a href="#" class="second-slider__img-link">
+                                    <img src="./images/second-slide1.jpg" alt="" class="second-slider__img">
+                                </a>
+                            </div>
+                            <div class="second-slider__price-wrapper">
+                                <div class="second-slider__price-inner">
+                                    <a href="#" class="second-slider__price-link">
+                                        Куртка Мидуза
+                                    </a>
+                                    <p class="second-slider__price">5 500<span>p</span></p>
+                                </div>
+                                <button class="second-slider__like-btn ">
+                                    <svg width="35" height="33" viewBox="0 0 35 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M28.4565 18.6772L17.519 28.8907L6.58145 18.6772C5.86002 18.0153 5.29176 17.2197 4.91246 16.3406C4.53316 15.4614 4.35102 14.5177 4.37753 13.569C4.40404 12.6202 4.63861 11.6869 5.06647 10.8278C5.49434 9.96867 6.10623 9.20241 6.86362 8.57723C7.62101 7.95205 8.50748 7.48151 9.46722 7.19522C10.427 6.90894 11.4392 6.81311 12.4401 6.91379C13.4411 7.01446 14.4091 7.30945 15.2831 7.78018C16.1572 8.25091 16.9185 8.88719 17.519 9.64893C18.122 8.89272 18.8842 8.262 19.7576 7.79627C20.6311 7.33053 21.5972 7.0398 22.5953 6.94227C23.5935 6.84475 24.6022 6.94252 25.5584 7.22947C26.5146 7.51643 27.3977 7.98639 28.1525 8.60993C28.9072 9.23348 29.5173 9.9972 29.9446 10.8533C30.3718 11.7094 30.6071 12.6394 30.6357 13.5852C30.6642 14.5309 30.4854 15.4721 30.1104 16.3497C29.7354 17.2273 29.1724 18.0224 28.4565 18.6854" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="second-slider__item">
+                            <div class="second-slider__img-wrapper">
+                                <a href="#" class="second-slider__img-link">
+                                    <img src="./images/10 1.jpg" alt="" class="second-slider__img">
+                                </a>
+                            </div>
+                            <div class="second-slider__price-wrapper">
+                                <div class="second-slider__price-inner">
+                                    <a href="#" class="second-slider__price-link">
+                                        Куртка Мидуза
+                                    </a>
+                                    <p class="second-slider__price">5 500<span>p</span></p>
+                                </div>
+                                <button class="second-slider__like-btn ">
+                                    <svg width="35" height="33" viewBox="0 0 35 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M28.4565 18.6772L17.519 28.8907L6.58145 18.6772C5.86002 18.0153 5.29176 17.2197 4.91246 16.3406C4.53316 15.4614 4.35102 14.5177 4.37753 13.569C4.40404 12.6202 4.63861 11.6869 5.06647 10.8278C5.49434 9.96867 6.10623 9.20241 6.86362 8.57723C7.62101 7.95205 8.50748 7.48151 9.46722 7.19522C10.427 6.90894 11.4392 6.81311 12.4401 6.91379C13.4411 7.01446 14.4091 7.30945 15.2831 7.78018C16.1572 8.25091 16.9185 8.88719 17.519 9.64893C18.122 8.89272 18.8842 8.262 19.7576 7.79627C20.6311 7.33053 21.5972 7.0398 22.5953 6.94227C23.5935 6.84475 24.6022 6.94252 25.5584 7.22947C26.5146 7.51643 27.3977 7.98639 28.1525 8.60993C28.9072 9.23348 29.5173 9.9972 29.9446 10.8533C30.3718 11.7094 30.6071 12.6394 30.6357 13.5852C30.6642 14.5309 30.4854 15.4721 30.1104 16.3497C29.7354 17.2273 29.1724 18.0224 28.4565 18.6854" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sales">
+                <div class="sales__fluid">
+                    <div class="sales__wrapper">
+                        <div class="sales__inner sales__inner--content">
+                            <p class="sales__title-sm">семь</p>
+                            <p class="sales__title-bg">чёрных пятниц</p>
+                            <p class="sales__counter-descr">Только день, раз в неделю. Купите то, что вы давно хотели!
+                                До начала распродажи осталось:</p>
+                            <div class="sales__counter-wrapper">
+                                <div id="countdown">
+                                    <span class="days"></span>
+                                    <span class="countdown__span">&nbsp;:</span>
+                                    <span class="hours"></span>
+                                    <span class="countdown__span">&nbsp;:</span>
+                                    <span class="minutes"></span>
+                                </div>
+                                <div class="sales__counter-days-wrapper">
+                                    <span class="sales__counter-days">дни</span>
+                                    <span class="sales__counter-days">часы</span>
+                                    <span class="sales__counter-days">минуты</span>
+                                </div>
+                            </div>
+                            <button class="sales__btn">Каталог и напоминание в Telegram</button>
+                        </div>
+                        <div class="sales__inner sales__inner--content--img">
+                            <div class="sales__img-wrapper">
+                                <img src="./images/sale-img.png" alt="" class="sales__img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="offers offer__slider-bg">
+                <a href="#" class="mb-slider__link">Рубашки</a>
+                <div class="offers__fluid">
+                    <div class="offers__link-wrapper">
+                        <a href="#" class="offers__link"><span>Платья</span></a>
+                    </div>
+                        <div class="first-slider">
+                            <div class="first-slider__item first-slider__item--bottom">
+                                <div class="first-slider__img-wrapper">
+                                    <a href="#" class="first__slider-offer--link">
+                                        <img src="./images/first-slide1.jpg" alt="" class="first-slider__img">
+                                    </a>
+                                </div>
+                                <div class="first-slider__price-wrapper">
+                                    <div class="first-slider__price-inner">
+                                        <p class="first-slider__price-title">Косынка черная</p>
+                                        <p class="first-slider__price-cost">5500 <span>p</span></p>
+                                    </div>
+                                    <button class="first-slider__like-btn">
+                                        <svg width="35" height="33" viewBox="0 0 35 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M28.4565 18.6772L17.519 28.8907L6.58145 18.6772C5.86002 18.0153 5.29176 17.2197 4.91246 16.3406C4.53316 15.4614 4.35102 14.5177 4.37753 13.569C4.40404 12.6202 4.63861 11.6869 5.06647 10.8278C5.49434 9.96867 6.10623 9.20241 6.86362 8.57723C7.62101 7.95205 8.50748 7.48151 9.46722 7.19522C10.427 6.90894 11.4392 6.81311 12.4401 6.91379C13.4411 7.01446 14.4091 7.30945 15.2831 7.78018C16.1572 8.25091 16.9185 8.88719 17.519 9.64893C18.122 8.89272 18.8842 8.262 19.7576 7.79627C20.6311 7.33053 21.5972 7.0398 22.5953 6.94227C23.5935 6.84475 24.6022 6.94252 25.5584 7.22947C26.5146 7.51643 27.3977 7.98639 28.1525 8.60993C28.9072 9.23348 29.5173 9.9972 29.9446 10.8533C30.3718 11.7094 30.6071 12.6394 30.6357 13.5852C30.6642 14.5309 30.4854 15.4721 30.1104 16.3497C29.7354 17.2273 29.1724 18.0224 28.4565 18.6854" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="bg-slider__price-wrapper">
+                                    <div class="second-slider__price-inner">
+                                        <a href="#" class="second-slider__price-link">
+                                            Куртка Мидуза
+                                        </a>
+                                        <p class="second-slider__price">5 500<span>p</span></p>
+                                    </div>
+                                    <button class="second-slider__like-btn second-slider__like-btn--active">
+                                        <svg width="35" height="33" viewBox="0 0 35 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M28.4565 18.6772L17.519 28.8907L6.58145 18.6772C5.86002 18.0153 5.29176 17.2197 4.91246 16.3406C4.53316 15.4614 4.35102 14.5177 4.37753 13.569C4.40404 12.6202 4.63861 11.6869 5.06647 10.8278C5.49434 9.96867 6.10623 9.20241 6.86362 8.57723C7.62101 7.95205 8.50748 7.48151 9.46722 7.19522C10.427 6.90894 11.4392 6.81311 12.4401 6.91379C13.4411 7.01446 14.4091 7.30945 15.2831 7.78018C16.1572 8.25091 16.9185 8.88719 17.519 9.64893C18.122 8.89272 18.8842 8.262 19.7576 7.79627C20.6311 7.33053 21.5972 7.0398 22.5953 6.94227C23.5935 6.84475 24.6022 6.94252 25.5584 7.22947C26.5146 7.51643 27.3977 7.98639 28.1525 8.60993C28.9072 9.23348 29.5173 9.9972 29.9446 10.8533C30.3718 11.7094 30.6071 12.6394 30.6357 13.5852C30.6642 14.5309 30.4854 15.4721 30.1104 16.3497C29.7354 17.2273 29.1724 18.0224 28.4565 18.6854" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="first-slider__item first-slider__item--bottom">
+                                <div class="first-slider__img-wrapper">
+                                    <a href="#" class="first__slider-offer--link">
+                                        <img src="./images/first-slide2.jpg" alt="" class="first-slider__img">
+                                    </a>
+                                </div>
+                                <div class="first-slider__price-wrapper">
+                                    <div class="first-slider__price-inner">
+                                        <p class="first-slider__price-title">Косынка черная</p>
+                                        <p class="first-slider__price-cost">5500 <span>p</span></p>
+                                    </div>
+                                    <button class="first-slider__like-btn">
+                                        <svg width="35" height="33" viewBox="0 0 35 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M28.4565 18.6772L17.519 28.8907L6.58145 18.6772C5.86002 18.0153 5.29176 17.2197 4.91246 16.3406C4.53316 15.4614 4.35102 14.5177 4.37753 13.569C4.40404 12.6202 4.63861 11.6869 5.06647 10.8278C5.49434 9.96867 6.10623 9.20241 6.86362 8.57723C7.62101 7.95205 8.50748 7.48151 9.46722 7.19522C10.427 6.90894 11.4392 6.81311 12.4401 6.91379C13.4411 7.01446 14.4091 7.30945 15.2831 7.78018C16.1572 8.25091 16.9185 8.88719 17.519 9.64893C18.122 8.89272 18.8842 8.262 19.7576 7.79627C20.6311 7.33053 21.5972 7.0398 22.5953 6.94227C23.5935 6.84475 24.6022 6.94252 25.5584 7.22947C26.5146 7.51643 27.3977 7.98639 28.1525 8.60993C28.9072 9.23348 29.5173 9.9972 29.9446 10.8533C30.3718 11.7094 30.6071 12.6394 30.6357 13.5852C30.6642 14.5309 30.4854 15.4721 30.1104 16.3497C29.7354 17.2273 29.1724 18.0224 28.4565 18.6854" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="bg-slider__price-wrapper">
+                                    <div class="second-slider__price-inner">
+                                        <a href="#" class="second-slider__price-link">
+                                            Куртка Мидуза
+                                        </a>
+                                        <p class="second-slider__price">5 500<span>p</span></p>
+                                    </div>
+                                    <button class="second-slider__like-btn second-slider__like-btn--active">
+                                        <svg width="35" height="33" viewBox="0 0 35 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M28.4565 18.6772L17.519 28.8907L6.58145 18.6772C5.86002 18.0153 5.29176 17.2197 4.91246 16.3406C4.53316 15.4614 4.35102 14.5177 4.37753 13.569C4.40404 12.6202 4.63861 11.6869 5.06647 10.8278C5.49434 9.96867 6.10623 9.20241 6.86362 8.57723C7.62101 7.95205 8.50748 7.48151 9.46722 7.19522C10.427 6.90894 11.4392 6.81311 12.4401 6.91379C13.4411 7.01446 14.4091 7.30945 15.2831 7.78018C16.1572 8.25091 16.9185 8.88719 17.519 9.64893C18.122 8.89272 18.8842 8.262 19.7576 7.79627C20.6311 7.33053 21.5972 7.0398 22.5953 6.94227C23.5935 6.84475 24.6022 6.94252 25.5584 7.22947C26.5146 7.51643 27.3977 7.98639 28.1525 8.60993C28.9072 9.23348 29.5173 9.9972 29.9446 10.8533C30.3718 11.7094 30.6071 12.6394 30.6357 13.5852C30.6642 14.5309 30.4854 15.4721 30.1104 16.3497C29.7354 17.2273 29.1724 18.0224 28.4565 18.6854" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="first-slider__item first-slider__item--bottom">
+                                <div class="first-slider__img-wrapper">
+                                    <a href="#" class="first__slider-offer--link">
+                                        <img src="./images/first-slide3.jpg" alt="" class="first-slider__img">
+                                    </a>
+                                </div>
+                                <div class="first-slider__price-wrapper">
+                                    <div class="first-slider__price-inner">
+                                        <p class="first-slider__price-title">Косынка черная</p>
+                                        <p class="first-slider__price-cost">5500 <span>p</span></p>
+                                    </div>
+                                    <button class="first-slider__like-btn">
+                                        <svg width="35" height="33" viewBox="0 0 35 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M28.4565 18.6772L17.519 28.8907L6.58145 18.6772C5.86002 18.0153 5.29176 17.2197 4.91246 16.3406C4.53316 15.4614 4.35102 14.5177 4.37753 13.569C4.40404 12.6202 4.63861 11.6869 5.06647 10.8278C5.49434 9.96867 6.10623 9.20241 6.86362 8.57723C7.62101 7.95205 8.50748 7.48151 9.46722 7.19522C10.427 6.90894 11.4392 6.81311 12.4401 6.91379C13.4411 7.01446 14.4091 7.30945 15.2831 7.78018C16.1572 8.25091 16.9185 8.88719 17.519 9.64893C18.122 8.89272 18.8842 8.262 19.7576 7.79627C20.6311 7.33053 21.5972 7.0398 22.5953 6.94227C23.5935 6.84475 24.6022 6.94252 25.5584 7.22947C26.5146 7.51643 27.3977 7.98639 28.1525 8.60993C28.9072 9.23348 29.5173 9.9972 29.9446 10.8533C30.3718 11.7094 30.6071 12.6394 30.6357 13.5852C30.6642 14.5309 30.4854 15.4721 30.1104 16.3497C29.7354 17.2273 29.1724 18.0224 28.4565 18.6854" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="bg-slider__price-wrapper">
+                                    <div class="second-slider__price-inner">
+                                        <a href="#" class="second-slider__price-link">
+                                            Куртка Мидуза
+                                        </a>
+                                        <p class="second-slider__price">5 500<span>p</span></p>
+                                    </div>
+                                    <button class="second-slider__like-btn second-slider__like-btn--active">
+                                        <svg width="35" height="33" viewBox="0 0 35 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M28.4565 18.6772L17.519 28.8907L6.58145 18.6772C5.86002 18.0153 5.29176 17.2197 4.91246 16.3406C4.53316 15.4614 4.35102 14.5177 4.37753 13.569C4.40404 12.6202 4.63861 11.6869 5.06647 10.8278C5.49434 9.96867 6.10623 9.20241 6.86362 8.57723C7.62101 7.95205 8.50748 7.48151 9.46722 7.19522C10.427 6.90894 11.4392 6.81311 12.4401 6.91379C13.4411 7.01446 14.4091 7.30945 15.2831 7.78018C16.1572 8.25091 16.9185 8.88719 17.519 9.64893C18.122 8.89272 18.8842 8.262 19.7576 7.79627C20.6311 7.33053 21.5972 7.0398 22.5953 6.94227C23.5935 6.84475 24.6022 6.94252 25.5584 7.22947C26.5146 7.51643 27.3977 7.98639 28.1525 8.60993C28.9072 9.23348 29.5173 9.9972 29.9446 10.8533C30.3718 11.7094 30.6071 12.6394 30.6357 13.5852C30.6642 14.5309 30.4854 15.4721 30.1104 16.3497C29.7354 17.2273 29.1724 18.0224 28.4565 18.6854" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="first-slider__item first-slider__item--bottom">
+                                <div class="first-slider__img-wrapper">
+                                    <a href="#" class="first__slider-offer--link">
+                                        <img src="./images/first-slide1.jpg" alt="" class="first-slider__img">
+                                    </a>
+                                </div>
+                                <div class="first-slider__price-wrapper">
+                                    <div class="first-slider__price-inner">
+                                        <p class="first-slider__price-title">Косынка черная</p>
+                                        <p class="first-slider__price-cost">5500 <span>p</span></p>
+                                    </div>
+                                    <button class="first-slider__like-btn">
+                                        <svg width="35" height="33" viewBox="0 0 35 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M28.4565 18.6772L17.519 28.8907L6.58145 18.6772C5.86002 18.0153 5.29176 17.2197 4.91246 16.3406C4.53316 15.4614 4.35102 14.5177 4.37753 13.569C4.40404 12.6202 4.63861 11.6869 5.06647 10.8278C5.49434 9.96867 6.10623 9.20241 6.86362 8.57723C7.62101 7.95205 8.50748 7.48151 9.46722 7.19522C10.427 6.90894 11.4392 6.81311 12.4401 6.91379C13.4411 7.01446 14.4091 7.30945 15.2831 7.78018C16.1572 8.25091 16.9185 8.88719 17.519 9.64893C18.122 8.89272 18.8842 8.262 19.7576 7.79627C20.6311 7.33053 21.5972 7.0398 22.5953 6.94227C23.5935 6.84475 24.6022 6.94252 25.5584 7.22947C26.5146 7.51643 27.3977 7.98639 28.1525 8.60993C28.9072 9.23348 29.5173 9.9972 29.9446 10.8533C30.3718 11.7094 30.6071 12.6394 30.6357 13.5852C30.6642 14.5309 30.4854 15.4721 30.1104 16.3497C29.7354 17.2273 29.1724 18.0224 28.4565 18.6854" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="bg-slider__price-wrapper">
+                                    <div class="second-slider__price-inner">
+                                        <a href="#" class="second-slider__price-link">
+                                            Куртка Мидуза
+                                        </a>
+                                        <p class="second-slider__price">5 500<span>p</span></p>
+                                    </div>
+                                    <button class="second-slider__like-btn second-slider__like-btn--active">
+                                        <svg width="35" height="33" viewBox="0 0 35 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M28.4565 18.6772L17.519 28.8907L6.58145 18.6772C5.86002 18.0153 5.29176 17.2197 4.91246 16.3406C4.53316 15.4614 4.35102 14.5177 4.37753 13.569C4.40404 12.6202 4.63861 11.6869 5.06647 10.8278C5.49434 9.96867 6.10623 9.20241 6.86362 8.57723C7.62101 7.95205 8.50748 7.48151 9.46722 7.19522C10.427 6.90894 11.4392 6.81311 12.4401 6.91379C13.4411 7.01446 14.4091 7.30945 15.2831 7.78018C16.1572 8.25091 16.9185 8.88719 17.519 9.64893C18.122 8.89272 18.8842 8.262 19.7576 7.79627C20.6311 7.33053 21.5972 7.0398 22.5953 6.94227C23.5935 6.84475 24.6022 6.94252 25.5584 7.22947C26.5146 7.51643 27.3977 7.98639 28.1525 8.60993C28.9072 9.23348 29.5173 9.9972 29.9446 10.8533C30.3718 11.7094 30.6071 12.6394 30.6357 13.5852C30.6642 14.5309 30.4854 15.4721 30.1104 16.3497C29.7354 17.2273 29.1724 18.0224 28.4565 18.6854" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                </section>
+                <section class="offers offers__slide-sm">
+                    <a href="#" class="mb-slider__link">Рубашки</a>
+                <div class="offers__fluid">
+                    <div class="offers__link-wrapper--second-slider">
+                        <a href="#" class="offers__link"><span>Платья</span></a>
+                    </div>
+                    <div class="offers__second-slider">
+                        <div class="second-slider__item">
+                            <div class="second-slider__img-wrapper">
+                                <a href="#" class="second-slider__img-link">
+                                    <img src="./images/second-slide1.jpg" alt="" class="second-slider__img">
+                                </a>
+                            </div>
+                            <div class="second-slider__price-wrapper">
+                                <div class="second-slider__price-inner">
+                                    <a href="#" class="second-slider__price-link">
+                                        Куртка Мидуза
+                                    </a>
+                                    <p class="second-slider__price">5 500<span>p</span></p>
+                                </div>
+                                <button class="second-slider__like-btn ">
+                                    <svg width="35" height="33" viewBox="0 0 35 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M28.4565 18.6772L17.519 28.8907L6.58145 18.6772C5.86002 18.0153 5.29176 17.2197 4.91246 16.3406C4.53316 15.4614 4.35102 14.5177 4.37753 13.569C4.40404 12.6202 4.63861 11.6869 5.06647 10.8278C5.49434 9.96867 6.10623 9.20241 6.86362 8.57723C7.62101 7.95205 8.50748 7.48151 9.46722 7.19522C10.427 6.90894 11.4392 6.81311 12.4401 6.91379C13.4411 7.01446 14.4091 7.30945 15.2831 7.78018C16.1572 8.25091 16.9185 8.88719 17.519 9.64893C18.122 8.89272 18.8842 8.262 19.7576 7.79627C20.6311 7.33053 21.5972 7.0398 22.5953 6.94227C23.5935 6.84475 24.6022 6.94252 25.5584 7.22947C26.5146 7.51643 27.3977 7.98639 28.1525 8.60993C28.9072 9.23348 29.5173 9.9972 29.9446 10.8533C30.3718 11.7094 30.6071 12.6394 30.6357 13.5852C30.6642 14.5309 30.4854 15.4721 30.1104 16.3497C29.7354 17.2273 29.1724 18.0224 28.4565 18.6854" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="second-slider__item">
+                            <div class="second-slider__img-wrapper">
+                                <a href="#" class="second-slider__img-link">
+                                    <img src="./images/second-slide2.jpg" alt="" class="second-slider__img">
+                                </a>
+                            </div>
+                            <div class="second-slider__price-wrapper">
+                                <div class="second-slider__price-inner">
+                                    <a href="#" class="second-slider__price-link">
+                                        Куртка Мидуза
+                                    </a>
+                                    <p class="second-slider__price">5 500<span>p</span></p>
+                                </div>
+                                <button class="second-slider__like-btn ">
+                                    <svg width="35" height="33" viewBox="0 0 35 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M28.4565 18.6772L17.519 28.8907L6.58145 18.6772C5.86002 18.0153 5.29176 17.2197 4.91246 16.3406C4.53316 15.4614 4.35102 14.5177 4.37753 13.569C4.40404 12.6202 4.63861 11.6869 5.06647 10.8278C5.49434 9.96867 6.10623 9.20241 6.86362 8.57723C7.62101 7.95205 8.50748 7.48151 9.46722 7.19522C10.427 6.90894 11.4392 6.81311 12.4401 6.91379C13.4411 7.01446 14.4091 7.30945 15.2831 7.78018C16.1572 8.25091 16.9185 8.88719 17.519 9.64893C18.122 8.89272 18.8842 8.262 19.7576 7.79627C20.6311 7.33053 21.5972 7.0398 22.5953 6.94227C23.5935 6.84475 24.6022 6.94252 25.5584 7.22947C26.5146 7.51643 27.3977 7.98639 28.1525 8.60993C28.9072 9.23348 29.5173 9.9972 29.9446 10.8533C30.3718 11.7094 30.6071 12.6394 30.6357 13.5852C30.6642 14.5309 30.4854 15.4721 30.1104 16.3497C29.7354 17.2273 29.1724 18.0224 28.4565 18.6854" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="second-slider__item">
+                            <div class="second-slider__img-wrapper">
+                                <a href="#" class="second-slider__img-link">
+                                    <img src="./images/second-slide3.jpg" alt="" class="second-slider__img">
+                                </a>
+                            </div>
+                            <div class="second-slider__price-wrapper">
+                                <div class="second-slider__price-inner">
+                                    <a href="#" class="second-slider__price-link">
+                                        Куртка Мидуза
+                                    </a>
+                                    <p class="second-slider__price">5 500<span>p</span></p>
+                                </div>
+                                <button class="second-slider__like-btn ">
+                                    <svg width="35" height="33" viewBox="0 0 35 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M28.4565 18.6772L17.519 28.8907L6.58145 18.6772C5.86002 18.0153 5.29176 17.2197 4.91246 16.3406C4.53316 15.4614 4.35102 14.5177 4.37753 13.569C4.40404 12.6202 4.63861 11.6869 5.06647 10.8278C5.49434 9.96867 6.10623 9.20241 6.86362 8.57723C7.62101 7.95205 8.50748 7.48151 9.46722 7.19522C10.427 6.90894 11.4392 6.81311 12.4401 6.91379C13.4411 7.01446 14.4091 7.30945 15.2831 7.78018C16.1572 8.25091 16.9185 8.88719 17.519 9.64893C18.122 8.89272 18.8842 8.262 19.7576 7.79627C20.6311 7.33053 21.5972 7.0398 22.5953 6.94227C23.5935 6.84475 24.6022 6.94252 25.5584 7.22947C26.5146 7.51643 27.3977 7.98639 28.1525 8.60993C28.9072 9.23348 29.5173 9.9972 29.9446 10.8533C30.3718 11.7094 30.6071 12.6394 30.6357 13.5852C30.6642 14.5309 30.4854 15.4721 30.1104 16.3497C29.7354 17.2273 29.1724 18.0224 28.4565 18.6854" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="second-slider__item">
+                            <div class="second-slider__img-wrapper">
+                                <a href="#" class="second-slider__img-link">
+                                    <img src="./images/second-slide4.jpg" alt="" class="second-slider__img">
+                                </a>
+                            </div>
+                            <div class="second-slider__price-wrapper">
+                                <div class="second-slider__price-inner">
+                                    <a href="#" class="second-slider__price-link">
+                                        Куртка Мидуза
+                                    </a>
+                                    <p class="second-slider__price">5 500<span>p</span></p>
+                                </div>
+                                <button class="second-slider__like-btn ">
+                                    <svg width="35" height="33" viewBox="0 0 35 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M28.4565 18.6772L17.519 28.8907L6.58145 18.6772C5.86002 18.0153 5.29176 17.2197 4.91246 16.3406C4.53316 15.4614 4.35102 14.5177 4.37753 13.569C4.40404 12.6202 4.63861 11.6869 5.06647 10.8278C5.49434 9.96867 6.10623 9.20241 6.86362 8.57723C7.62101 7.95205 8.50748 7.48151 9.46722 7.19522C10.427 6.90894 11.4392 6.81311 12.4401 6.91379C13.4411 7.01446 14.4091 7.30945 15.2831 7.78018C16.1572 8.25091 16.9185 8.88719 17.519 9.64893C18.122 8.89272 18.8842 8.262 19.7576 7.79627C20.6311 7.33053 21.5972 7.0398 22.5953 6.94227C23.5935 6.84475 24.6022 6.94252 25.5584 7.22947C26.5146 7.51643 27.3977 7.98639 28.1525 8.60993C28.9072 9.23348 29.5173 9.9972 29.9446 10.8533C30.3718 11.7094 30.6071 12.6394 30.6357 13.5852C30.6642 14.5309 30.4854 15.4721 30.1104 16.3497C29.7354 17.2273 29.1724 18.0224 28.4565 18.6854" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="second-slider__item">
+                            <div class="second-slider__img-wrapper">
+                                <a href="#" class="second-slider__img-link">
+                                    <img src="./images/second-slide1.jpg" alt="" class="second-slider__img">
+                                </a>
+                            </div>
+                            <div class="second-slider__price-wrapper">
+                                <div class="second-slider__price-inner">
+                                    <a href="#" class="second-slider__price-link">
+                                        Куртка Мидуза
+                                    </a>
+                                    <p class="second-slider__price">5 500<span>p</span></p>
+                                </div>
+                                <button class="second-slider__like-btn ">
+                                    <svg width="35" height="33" viewBox="0 0 35 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M28.4565 18.6772L17.519 28.8907L6.58145 18.6772C5.86002 18.0153 5.29176 17.2197 4.91246 16.3406C4.53316 15.4614 4.35102 14.5177 4.37753 13.569C4.40404 12.6202 4.63861 11.6869 5.06647 10.8278C5.49434 9.96867 6.10623 9.20241 6.86362 8.57723C7.62101 7.95205 8.50748 7.48151 9.46722 7.19522C10.427 6.90894 11.4392 6.81311 12.4401 6.91379C13.4411 7.01446 14.4091 7.30945 15.2831 7.78018C16.1572 8.25091 16.9185 8.88719 17.519 9.64893C18.122 8.89272 18.8842 8.262 19.7576 7.79627C20.6311 7.33053 21.5972 7.0398 22.5953 6.94227C23.5935 6.84475 24.6022 6.94252 25.5584 7.22947C26.5146 7.51643 27.3977 7.98639 28.1525 8.60993C28.9072 9.23348 29.5173 9.9972 29.9446 10.8533C30.3718 11.7094 30.6071 12.6394 30.6357 13.5852C30.6642 14.5309 30.4854 15.4721 30.1104 16.3497C29.7354 17.2273 29.1724 18.0224 28.4565 18.6854" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="second-slider__item">
+                            <div class="second-slider__img-wrapper">
+                                <a href="#" class="second-slider__img-link">
+                                    <img src="./images/second-slide4.jpg" alt="" class="second-slider__img">
+                                </a>
+                            </div>
+                            <div class="second-slider__price-wrapper">
+                                <div class="second-slider__price-inner">
+                                    <a href="#" class="second-slider__price-link">
+                                        Куртка Мидуза
+                                    </a>
+                                    <p class="second-slider__price">5 500<span>p</span></p>
+                                </div>
+                                <button class="second-slider__like-btn ">
+                                    <svg width="35" height="33" viewBox="0 0 35 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M28.4565 18.6772L17.519 28.8907L6.58145 18.6772C5.86002 18.0153 5.29176 17.2197 4.91246 16.3406C4.53316 15.4614 4.35102 14.5177 4.37753 13.569C4.40404 12.6202 4.63861 11.6869 5.06647 10.8278C5.49434 9.96867 6.10623 9.20241 6.86362 8.57723C7.62101 7.95205 8.50748 7.48151 9.46722 7.19522C10.427 6.90894 11.4392 6.81311 12.4401 6.91379C13.4411 7.01446 14.4091 7.30945 15.2831 7.78018C16.1572 8.25091 16.9185 8.88719 17.519 9.64893C18.122 8.89272 18.8842 8.262 19.7576 7.79627C20.6311 7.33053 21.5972 7.0398 22.5953 6.94227C23.5935 6.84475 24.6022 6.94252 25.5584 7.22947C26.5146 7.51643 27.3977 7.98639 28.1525 8.60993C28.9072 9.23348 29.5173 9.9972 29.9446 10.8533C30.3718 11.7094 30.6071 12.6394 30.6357 13.5852C30.6642 14.5309 30.4854 15.4721 30.1104 16.3497C29.7354 17.2273 29.1724 18.0224 28.4565 18.6854" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </section>
+                <section class="offers offers__slider-sm">
+                <a href="#" class="mb-slider__link">Рубашки</a>
+                <div class="offers__fluid">
+                    <div class="offers__link-wrapper--second-slider">
+                        <a href="#" class="offers__link"><span>Брюки</span></a>
+                    </div>
+                    <div class="offers__second-slider">
+                        <div class="second-slider__item">
+                            <div class="second-slider__img-wrapper">
+                                <a href="#" class="second-slider__img-link">
+                                    <img src="./images/10 1.jpg" alt="" class="second-slider__img">
+                                </a>
+                            </div>
+                            <div class="second-slider__price-wrapper">
+                                <div class="second-slider__price-inner">
+                                    <a href="#" class="second-slider__price-link">
+                                        Куртка Мидуза
+                                    </a>
+                                    <p class="second-slider__price">5 500<span>p</span></p>
+                                </div>
+                                <button class="second-slider__like-btn second-slider__like-btn--active">
+                                    <svg width="35" height="33" viewBox="0 0 35 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M28.4565 18.6772L17.519 28.8907L6.58145 18.6772C5.86002 18.0153 5.29176 17.2197 4.91246 16.3406C4.53316 15.4614 4.35102 14.5177 4.37753 13.569C4.40404 12.6202 4.63861 11.6869 5.06647 10.8278C5.49434 9.96867 6.10623 9.20241 6.86362 8.57723C7.62101 7.95205 8.50748 7.48151 9.46722 7.19522C10.427 6.90894 11.4392 6.81311 12.4401 6.91379C13.4411 7.01446 14.4091 7.30945 15.2831 7.78018C16.1572 8.25091 16.9185 8.88719 17.519 9.64893C18.122 8.89272 18.8842 8.262 19.7576 7.79627C20.6311 7.33053 21.5972 7.0398 22.5953 6.94227C23.5935 6.84475 24.6022 6.94252 25.5584 7.22947C26.5146 7.51643 27.3977 7.98639 28.1525 8.60993C28.9072 9.23348 29.5173 9.9972 29.9446 10.8533C30.3718 11.7094 30.6071 12.6394 30.6357 13.5852C30.6642 14.5309 30.4854 15.4721 30.1104 16.3497C29.7354 17.2273 29.1724 18.0224 28.4565 18.6854" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="second-slider__item">
+                            <div class="second-slider__img-wrapper">
+                                <a href="#" class="second-slider__img-link">
+                                    <img src="./images/5 5.jpg" alt="" class="second-slider__img">
+                                </a>
+                            </div>
+                            <div class="second-slider__price-wrapper">
+                                <div class="second-slider__price-inner">
+                                    <a href="#" class="second-slider__price-link">
+                                        Куртка Мидуза
+                                    </a>
+                                    <p class="second-slider__price">5 500<span>p</span></p>
+                                </div>
+                                <button class="second-slider__like-btn ">
+                                    <svg width="35" height="33" viewBox="0 0 35 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M28.4565 18.6772L17.519 28.8907L6.58145 18.6772C5.86002 18.0153 5.29176 17.2197 4.91246 16.3406C4.53316 15.4614 4.35102 14.5177 4.37753 13.569C4.40404 12.6202 4.63861 11.6869 5.06647 10.8278C5.49434 9.96867 6.10623 9.20241 6.86362 8.57723C7.62101 7.95205 8.50748 7.48151 9.46722 7.19522C10.427 6.90894 11.4392 6.81311 12.4401 6.91379C13.4411 7.01446 14.4091 7.30945 15.2831 7.78018C16.1572 8.25091 16.9185 8.88719 17.519 9.64893C18.122 8.89272 18.8842 8.262 19.7576 7.79627C20.6311 7.33053 21.5972 7.0398 22.5953 6.94227C23.5935 6.84475 24.6022 6.94252 25.5584 7.22947C26.5146 7.51643 27.3977 7.98639 28.1525 8.60993C28.9072 9.23348 29.5173 9.9972 29.9446 10.8533C30.3718 11.7094 30.6071 12.6394 30.6357 13.5852C30.6642 14.5309 30.4854 15.4721 30.1104 16.3497C29.7354 17.2273 29.1724 18.0224 28.4565 18.6854" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="second-slider__item">
+                            <div class="second-slider__img-wrapper">
+                                <a href="#" class="second-slider__img-link">
+                                    <img src="./images/11 1.jpg" alt="" class="second-slider__img">
+                                </a>
+                            </div>
+                            <div class="second-slider__price-wrapper">
+                                <div class="second-slider__price-inner">
+                                    <a href="#" class="second-slider__price-link">
+                                        Куртка Мидуза
+                                    </a>
+                                    <p class="second-slider__price">5 500<span>p</span></p>
+                                </div>
+                                <button class="second-slider__like-btn ">
+                                    <svg width="35" height="33" viewBox="0 0 35 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M28.4565 18.6772L17.519 28.8907L6.58145 18.6772C5.86002 18.0153 5.29176 17.2197 4.91246 16.3406C4.53316 15.4614 4.35102 14.5177 4.37753 13.569C4.40404 12.6202 4.63861 11.6869 5.06647 10.8278C5.49434 9.96867 6.10623 9.20241 6.86362 8.57723C7.62101 7.95205 8.50748 7.48151 9.46722 7.19522C10.427 6.90894 11.4392 6.81311 12.4401 6.91379C13.4411 7.01446 14.4091 7.30945 15.2831 7.78018C16.1572 8.25091 16.9185 8.88719 17.519 9.64893C18.122 8.89272 18.8842 8.262 19.7576 7.79627C20.6311 7.33053 21.5972 7.0398 22.5953 6.94227C23.5935 6.84475 24.6022 6.94252 25.5584 7.22947C26.5146 7.51643 27.3977 7.98639 28.1525 8.60993C28.9072 9.23348 29.5173 9.9972 29.9446 10.8533C30.3718 11.7094 30.6071 12.6394 30.6357 13.5852C30.6642 14.5309 30.4854 15.4721 30.1104 16.3497C29.7354 17.2273 29.1724 18.0224 28.4565 18.6854" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="second-slider__item">
+                            <div class="second-slider__img-wrapper">
+                                <a href="#" class="second-slider__img-link">
+                                    <img src="./images/second-slide4.jpg" alt="" class="second-slider__img">
+                                </a>
+                            </div>
+                            <div class="second-slider__price-wrapper">
+                                <div class="second-slider__price-inner">
+                                    <a href="#" class="second-slider__price-link">
+                                        Куртка Мидуза
+                                    </a>
+                                    <p class="second-slider__price">5 500<span>p</span></p>
+                                </div>
+                                <button class="second-slider__like-btn ">
+                                    <svg width="35" height="33" viewBox="0 0 35 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M28.4565 18.6772L17.519 28.8907L6.58145 18.6772C5.86002 18.0153 5.29176 17.2197 4.91246 16.3406C4.53316 15.4614 4.35102 14.5177 4.37753 13.569C4.40404 12.6202 4.63861 11.6869 5.06647 10.8278C5.49434 9.96867 6.10623 9.20241 6.86362 8.57723C7.62101 7.95205 8.50748 7.48151 9.46722 7.19522C10.427 6.90894 11.4392 6.81311 12.4401 6.91379C13.4411 7.01446 14.4091 7.30945 15.2831 7.78018C16.1572 8.25091 16.9185 8.88719 17.519 9.64893C18.122 8.89272 18.8842 8.262 19.7576 7.79627C20.6311 7.33053 21.5972 7.0398 22.5953 6.94227C23.5935 6.84475 24.6022 6.94252 25.5584 7.22947C26.5146 7.51643 27.3977 7.98639 28.1525 8.60993C28.9072 9.23348 29.5173 9.9972 29.9446 10.8533C30.3718 11.7094 30.6071 12.6394 30.6357 13.5852C30.6642 14.5309 30.4854 15.4721 30.1104 16.3497C29.7354 17.2273 29.1724 18.0224 28.4565 18.6854" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="second-slider__item">
+                            <div class="second-slider__img-wrapper">
+                                <a href="#" class="second-slider__img-link">
+                                    <img src="./images/second-slide1.jpg" alt="" class="second-slider__img">
+                                </a>
+                            </div>
+                            <div class="second-slider__price-wrapper">
+                                <div class="second-slider__price-inner">
+                                    <a href="#" class="second-slider__price-link">
+                                        Куртка Мидуза
+                                    </a>
+                                    <p class="second-slider__price">5 500<span>p</span></p>
+                                </div>
+                                <button class="second-slider__like-btn ">
+                                    <svg width="35" height="33" viewBox="0 0 35 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M28.4565 18.6772L17.519 28.8907L6.58145 18.6772C5.86002 18.0153 5.29176 17.2197 4.91246 16.3406C4.53316 15.4614 4.35102 14.5177 4.37753 13.569C4.40404 12.6202 4.63861 11.6869 5.06647 10.8278C5.49434 9.96867 6.10623 9.20241 6.86362 8.57723C7.62101 7.95205 8.50748 7.48151 9.46722 7.19522C10.427 6.90894 11.4392 6.81311 12.4401 6.91379C13.4411 7.01446 14.4091 7.30945 15.2831 7.78018C16.1572 8.25091 16.9185 8.88719 17.519 9.64893C18.122 8.89272 18.8842 8.262 19.7576 7.79627C20.6311 7.33053 21.5972 7.0398 22.5953 6.94227C23.5935 6.84475 24.6022 6.94252 25.5584 7.22947C26.5146 7.51643 27.3977 7.98639 28.1525 8.60993C28.9072 9.23348 29.5173 9.9972 29.9446 10.8533C30.3718 11.7094 30.6071 12.6394 30.6357 13.5852C30.6642 14.5309 30.4854 15.4721 30.1104 16.3497C29.7354 17.2273 29.1724 18.0224 28.4565 18.6854" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="second-slider__item">
+                            <div class="second-slider__img-wrapper">
+                                <a href="#" class="second-slider__img-link">
+                                    <img src="./images/10 1.jpg" alt="" class="second-slider__img">
+                                </a>
+                            </div>
+                            <div class="second-slider__price-wrapper">
+                                <div class="second-slider__price-inner">
+                                    <a href="#" class="second-slider__price-link">
+                                        Куртка Мидуза
+                                    </a>
+                                    <p class="second-slider__price">5 500<span>p</span></p>
+                                </div>
+                                <button class="second-slider__like-btn ">
+                                    <svg width="35" height="33" viewBox="0 0 35 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M28.4565 18.6772L17.519 28.8907L6.58145 18.6772C5.86002 18.0153 5.29176 17.2197 4.91246 16.3406C4.53316 15.4614 4.35102 14.5177 4.37753 13.569C4.40404 12.6202 4.63861 11.6869 5.06647 10.8278C5.49434 9.96867 6.10623 9.20241 6.86362 8.57723C7.62101 7.95205 8.50748 7.48151 9.46722 7.19522C10.427 6.90894 11.4392 6.81311 12.4401 6.91379C13.4411 7.01446 14.4091 7.30945 15.2831 7.78018C16.1572 8.25091 16.9185 8.88719 17.519 9.64893C18.122 8.89272 18.8842 8.262 19.7576 7.79627C20.6311 7.33053 21.5972 7.0398 22.5953 6.94227C23.5935 6.84475 24.6022 6.94252 25.5584 7.22947C26.5146 7.51643 27.3977 7.98639 28.1525 8.60993C28.9072 9.23348 29.5173 9.9972 29.9446 10.8533C30.3718 11.7094 30.6071 12.6394 30.6357 13.5852C30.6642 14.5309 30.4854 15.4721 30.1104 16.3497C29.7354 17.2273 29.1724 18.0224 28.4565 18.6854" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="lead">
+                <div class="lead__wrapper">
+                    <div class="lead__inner">
+                        <h2 class="lead__title">Секретный клуб </h2>
+                        <p class="lead__descr">Подпишись на тайную рассылку и покупайте то, 
+                            чего еще нет в продаже.
+                            Узнавайте первыми о скидках и лимитированных коллекциях</p>
+                            <form action="post" class="lead__form">
+                                <input type="text" class="lead__input" placeholder="Ваш Email">
+                                <button class="lead__btn">ВСТУПИТЬ</button>
+                            </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__wrapper">
+                <div class="footer__top">
+                    <div class="footer__content">
+                        <div class="footer__logo-wrapper">
+                            <img src="./images/logo.svg" alt="" class="footer__logo">
+                        </div>
+                        <div class="footer__contacts">
+                            <div class="footer__shops">
+                                <p class="footer__shops-title">Магазины</p>
+                                <p class="footer__shops-descr">с 10:00 до 21:00 без выходных</p>
+                            </div>
+                            <adress class="footer__adress">
+                                <div class="footer__adress-text">
+                                    <p>
+                                    Ростов-на-Дону
+                                    ул.Восточная 75/77
+                                    </p>
+                                </div>
+                                <div class="footer__adress-map">
+                                    <div class="footer__adress-map--img">
+                                        <svg width="19" height="25" viewBox="0 0 19 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.5 0C14.7467 0 19 4.25329 19 9.5C19 10.1404 18.9366 10.7661 18.8158 11.3709C17.9773 17.6896 9.54992 24.881 9.54992 24.881C9.54992 24.881 2.37812 18.761 0.608253 12.852C0.21511 11.8096 0 10.6799 0 9.5C0 4.25329 4.25329 0 9.5 0Z" fill="#7A7A7A"/>
+                                            <path d="M13.119 9.49991C13.119 7.50116 11.4987 5.88086 9.49997 5.88086C7.50122 5.88086 5.88092 7.50116 5.88092 9.49991C5.88092 11.4987 7.50122 13.119 9.49997 13.119C11.4987 13.119 13.119 11.4987 13.119 9.49991Z" fill="black"/>
+                                        </svg>
+                                    </div>
+                                    <a href="#" class="footer__adress-map--text">Посмотреть на карте</a>
+                                </div>
+                            </adress>
+                            <adress class="footer__adress">
+                                <div class="footer__adress-text">
+                                    <p>
+                                    Краснодар
+                                    ул.Казбекская, 14
+                                    </p>
+                                </div>
+                                <div class="footer__adress-map">
+                                    <div class="footer__adress-map--img">
+                                        <svg width="19" height="25" viewBox="0 0 19 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.5 0C14.7467 0 19 4.25329 19 9.5C19 10.1404 18.9366 10.7661 18.8158 11.3709C17.9773 17.6896 9.54992 24.881 9.54992 24.881C9.54992 24.881 2.37812 18.761 0.608253 12.852C0.21511 11.8096 0 10.6799 0 9.5C0 4.25329 4.25329 0 9.5 0Z" fill="#7A7A7A"/>
+                                            <path d="M13.119 9.49991C13.119 7.50116 11.4987 5.88086 9.49997 5.88086C7.50122 5.88086 5.88092 7.50116 5.88092 9.49991C5.88092 11.4987 7.50122 13.119 9.49997 13.119C11.4987 13.119 13.119 11.4987 13.119 9.49991Z" fill="black"/>
+                                        </svg>
+                                    </div>
+                                    <a href="#" class="footer__adress-map--text">Посмотреть на карте</a>
+                                </div>
+                            </adress>
+                            <div class="footer__tel-wrapper">
+                                <p class="footer__tel-title">Обратная связь</p>
+                                <a href="tel:79182731017" class="footer__tel">Тел +7 (918) 273-10-17</a>
+                            </div>
+                            <div class="footer__social">
+                                <div class="footer__social-wrapper">
+                                    <a href="#" class="footer__social-link">
+                                        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.51649 16.4948L9.02816 18.9297L11.5486 27.0506C11.7099 27.5707 12.3447 27.763 12.766 27.4178L16.3957 24.4533C16.7762 24.1427 17.3181 24.1272 17.7158 24.4164L24.2625 29.1783C24.7132 29.5066 25.3518 29.2591 25.4649 28.7134L30.2607 5.60129C30.3841 5.00521 29.7995 4.50793 29.2329 4.72746L2.50886 15.0562C1.84936 15.311 1.85511 16.2465 2.51649 16.4948ZM11.1424 17.6336L23.8686 9.7807C24.0973 9.63998 24.3327 9.94982 24.1363 10.1323L13.6334 19.9136C13.2642 20.2579 13.0261 20.7187 12.9587 21.2188L12.6009 23.8751C12.5535 24.2298 12.0562 24.265 11.9585 23.9217L10.5826 19.0778C10.425 18.5253 10.6546 17.9352 11.1424 17.6336Z" fill="#E9E9E9"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="footer__social-wrapper">
+                                    <a href="#" class="footer__social-link"> 
+                                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14 0C6.28059 0 9.03455e-05 6.28052 9.03455e-05 14C9.03455e-05 16.4104 0.622784 18.7807 1.80365 20.8722L0.022612 27.227C-0.0358226 27.4357 0.020786 27.6597 0.171742 27.815C0.288002 27.9349 0.446263 28 0.608784 28C0.657479 28 0.706784 27.9939 0.75487 27.9823L7.3872 26.3395C9.41232 27.4266 11.6931 28 14 28C21.7195 28 28 21.7195 28 14C28 6.28052 21.7195 0 14 0ZM21.0426 18.9402C20.7432 19.7692 19.3066 20.5258 18.6164 20.6275C17.9967 20.7182 17.2127 20.7571 16.352 20.4869C15.8304 20.3225 15.1608 20.1046 14.3032 19.7388C10.6979 18.2012 8.34345 14.6166 8.16328 14.3798C7.98372 14.143 6.69572 12.4557 6.69572 10.7094C6.69572 8.96304 7.62398 8.10417 7.95389 7.7487C8.2838 7.39322 8.67276 7.30435 8.91258 7.30435C9.15241 7.30435 9.39163 7.30739 9.60162 7.31713C9.82258 7.32809 10.119 7.23374 10.4106 7.92643C10.7101 8.63739 11.4289 10.3837 11.5178 10.5621C11.6079 10.7398 11.6675 10.9474 11.5482 11.1842C11.4289 11.421 11.3693 11.5689 11.1891 11.7764C11.0089 11.984 10.8117 12.239 10.6498 12.3985C10.4696 12.5757 10.2828 12.7674 10.4921 13.1229C10.7015 13.4783 11.4228 14.6403 12.4917 15.5814C13.8643 16.7903 15.0226 17.1652 15.3818 17.343C15.7409 17.5207 15.9509 17.4909 16.1603 17.2541C16.3697 17.0167 17.0587 16.2175 17.2979 15.8626C17.5372 15.5077 17.777 15.5662 18.1069 15.6849C18.4368 15.803 20.2039 16.6612 20.563 16.839C20.9221 17.0167 21.1619 17.1056 21.252 17.2535C21.3421 17.4008 21.3421 18.1117 21.0426 18.9402Z" fill="#E9E9E9"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="footer__social-wrapper">
+                                    <a href="#" class="footer__social-link">
+                                        <svg width="32" height="26" viewBox="0 0 32 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M28.8 0.5H3.2C1.432 0.5 0.016 1.89844 0.016 3.625L0 22.375C0 24.1016 1.432 25.5 3.2 25.5H28.8C30.568 25.5 32 24.1016 32 22.375V3.625C32 1.89844 30.568 0.5 28.8 0.5ZM28.8 6.75L16 14.5625L3.2 6.75V3.625L16 11.4375L28.8 3.625V6.75Z" fill="#E9E9E9"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="footer__callback">
+                                <button class="footer__callback-btn">НАПИСАТЬ С САЙТА</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__content">
+                        <p class="footer__nav-title">Каталог</p>
+                        <nav class="footer__nav">
+                            <ul class="footer__nav-list">
+                                <li class="footer__nav-item">
+                                    <a href="#" class="footer__nav-link">
+                                        Платья и сарафаны
+                                    </a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#" class="footer__nav-link">
+                                        Брюки и джинсы
+                                    </a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#" class="footer__nav-link">
+                                        Костюмы
+                                    </a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#" class="footer__nav-link">
+                                        Джемперы, свитеры,  кардиганы
+                                    </a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#" class="footer__nav-link">
+                                        Майки, топы, боди
+                                    </a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#" class="footer__nav-link">
+                                        Юбки, шорты
+                                    </a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#" class="footer__nav-link">
+                                        Комбинезоны
+                                    </a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#" class="footer__nav-link">
+                                        Шапки, кепки, косынки
+                                    </a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#" class="footer__nav-link">
+                                        Рубашки
+                                    </a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#" class="footer__nav-link">
+                                        Пиджаки, жилеты, жакеты
+                                    </a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#" class="footer__nav-link">
+                                        Купальники, пляжная одежда
+                                    </a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#" class="footer__nav-link">
+                                        Верхняя одежда
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__content">
+                        <div class="footer__content-inner">
+                            <p class="footer__nav-title">Разделы</p>
+                        <nav class="footer__nav">
+                            <ul class="footer__nav-list">
+                                <li class="footer__nav-item">
+                                    <a href="#" class="footer__nav-link">
+                                        Новые товары
+                                    </a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#" class="footer__nav-link">
+                                        Товары со скидкой
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        </div>
+                        <div class="footer__content-inner ">
+                            <p class="footer__nav-title footer__nav-title--bay">Покупателям</p>
+                        <nav class="footer__nav">
+                            <ul class="footer__nav-list">
+                                <li class="footer__nav-item">
+                                    <a href="#" class="footer__nav-link">
+                                        Оплата и доставка
+                                    </a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#" class="footer__nav-link">
+                                        Гарантия и возврат
+                                    </a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#" class="footer__nav-link">
+                                        Таблица размеров
+                                    </a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#" class="footer__nav-link">
+                                        Программа лояльности
+                                    </a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#" class="footer__nav-link">
+                                        Подарочная карта
+                                    </a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#" class="footer__nav-link">
+                                        Отзывы
+                                    </a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#" class="footer__nav-link">
+                                        Контакты
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <div class="footer__bottom-wrapper">
+                        <ul class="footer__lang-list" id="langChangeFooter">
+                            <li class="footer__lang-item footer__lang-item--active" id="RUver"><a href="#" class="footer__lang-link">
+                                English version
+                            </a></li>
+                            <li class="footer__lang-item" id="ENGver"><a href="#" class="footer__lang-link">
+                                Russian version
+                            </a></li>
+                        </ul>
+                        <a href="#" class="policy-link">
+                            Пользовательское соглашение и политика конфиденциальности
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+</html>
